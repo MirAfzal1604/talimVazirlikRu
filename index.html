@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e01e13ae9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>uzedu</title>
+</head>
+
+<body>
+
+    <div class="links">
+        <div>
+            <a href="#">
+                <span>/info@xtv.uz</span>
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <span>@uzedu</span>
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <span>/uzedu.uz</span>
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <span>@uzedu</span>
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <span>/uzedu</span>
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="apperNav">
+        <div class="container h-100 ">
+            <div class="menuContentInner">
+                <img src="./img/logoMark.png" class="smallLogo" alt="logo">
+
+                <div class="listMenu">
+                    <ul>
+                        <li><a href="#" class="apperLi">О Министерстве</a>
+                            <ul>
+                                <li><a href="#">Миссия, задачи и стратегия</a></li>
+                                <li><a href="#">Управление</a></li>
+                                <li><a href="#">Центральный аппарат Министерства</a></li>
+                                <li><a href="#">Территориальные администрации</a></li>
+                                <li><a href="#">Дочерние компании</a></li>
+                                <li><a href="#">Обращения граждан</a></li>
+                                <li><a href="#">Реквизиты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="apperLi">Информационный центр</a>
+                            <ul>
+                                <li><a href="#">новости министерства</a></li>
+                                <li><a href="#">Логотип и руководство по бренду</a></li>
+                                <li><a href="#">Галерея</a></li>
+                                <li><a href="#">Информационный центр</a></li>
+                                <li><a href="#">Инфографика</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="simple">
+                        <li><a href="#">Законодательство</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Связь</a></li>
+                    </ul>
+                </div>
+
+                <div class="topMainMenu">
+                    <ul>
+                        <li><a href="#">Свободные места</a></li>
+                        <li><a href="#">Открытые данные</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Государственные символы</a></li>
+                        <li><a href="#">Обращение граждан</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bannerBox">
+        <div class="header_bar">
+            <div class="container">
+                <div class="nav">
+                    <div class="burger" onclick="burgerOpen(this)">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <div class="main_menu_box">
+                        <div class="menu_list">
+
+                            <div class="topMainMenu">
+                                <ul>
+                                    <li><a href="#">Свободные места</a></li>
+                                    <li><a href="#">Открытые данные</a></li>
+                                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                                    <li><a href="#">Государственные символы</a></li>
+                                    <li><a href="#">Обращение граждан</a></li>
+                                </ul>
+                                <div class="additionalFunctions">
+                                    <img src="./img/eye.png" alt="eye" class="eyeicon">
+                                    <img src="./img/search.png" alt="search" onclick="openSearch()" class="searchicon">
+
+                                    <div id="myOverlay">
+                                        <span class="closebtn" onclick="closeSearch()"><i class="fas fa-times"></i></span>
+                                        <div class="overlay-content">
+                                            <form class="hidden_form">
+                                                <input type="text" class="hidden_input" placeholder="Search.." name="search" required />
+                                                <button class="hidden_submit">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="menu_line"></div>
+
+                            <div class="bottomMainMenu">
+                                <ul class="menu">
+                                    <li><a href="#" class="apperLi">О Министерстве</a>
+                                        <ul>
+                                            <li><a href="#">Миссия, задачи и стратегия</a></li>
+                                            <li><a href="#">Управление</a></li>
+                                            <li><a href="#">Центральный аппарат Министерства</a></li>
+                                            <li><a href="#">Территориальные администрации</a></li>
+                                            <li><a href="#">Дочерние компании</a></li>
+                                            <li><a href="#">Обращения граждан</a></li>
+                                            <li><a href="#">Реквизиты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Законодательство</a></li>
+                                    <li><a href="#">Проекты</a></li>
+                                    <li><a href="#">Связь</a>
+                                        <ul>
+                                            <li><a href="#">новости министерства</a></li>
+                                            <li><a href="#">Логотип и руководство по бренду</a></li>
+                                            <li><a href="#">Галерея</a></li>
+                                            <li><a href="#">Информационный центр</a></li>
+                                            <li><a href="#">Инфографика</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Связь</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown langBar">
+                            <button class="borderedBtn dropbtn" onclick="openLang()" type="button">ру</button>
+
+                            <div id="w4" class="dropdown-menu-right dropdown-menu">
+                                <a class="dropdown-item active" href="#">Русский</a>
+                                <a class="dropdown-item" href="#">O'zbekcha</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bannerContent">
+
+                <div class="bigLogoArea">
+                    <div class="bigLogoBox">
+                        <div class="topDesignLine"></div>
+                        <img alt="logo" src="./img/logoMark.png">
+                        <div class="bottomDesignLine"></div>
+                    </div>
+
+                    <div class="logoTextBox">
+                        <h1>Министерство народного образования Республики Узбекистан</h1>
+
+                        <div class="quote">
+                            <p>Основой образования и воспитания является школа. А движущей силой школы являются учителя</p>
+
+                            <span>Шавкат Мирзиёев</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="statDataInfo">
+                <div class="swiper carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>10 083</h1>
+                                <div>школа</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>6.2 mln</h1>
+                                <div>студенты</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>450 ming</h1>
+                                <div>студенты</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>10 083</h1>
+                                <div>школа</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>6.2 mln</h1>
+                                <div>студенты</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>450 ming</h1>
+                                <div>студенты</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>10 083</h1>
+                                <div>школа</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>6.2 mln</h1>
+                                <div>студенты</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_height">
+                            <div class="separate">
+                                <h1>450 ming</h1>
+                                <div>студенты</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="uniqueShape" version="1.2" viewBox="0 0 250 70" xmlns="http://www.w3.org/2000/svg">
+            <style>.shp0 { fill: #ffffff }</style>
+            <path class="shp0" d="m0.26285 70c54.42-0.87 138.04-74.09 135.56-69.69-2.47 4.39-19.14 23.07-9.87 38.67 11.74 27.15 93.63 30.66 123.87 31.02h0.18108z"/>
+        </svg>
+    </div>
+
+    <div class="mainContent">
+        <div class="container">
+            <div class="afterHeader">
+                <div class="main1">
+                    <img src="./img/logoVertivalDark.png" alt="mainBg">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>@uzedu</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>@uzedu</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        <span>@uzedu</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mainService">
+                <div class="service_box">
+                    <div class="service_img">
+                        <img src="./img/forStudents.png" alt="students">
+                    </div>
+                    <h1>Студентам</h1>
+                    <p>
+                        Портал приема в 1 класс для перевода детей с ОВЗ из школы в школу
+                    </p>
+                    <button type="button">
+                       <a href="#">Читать далее</a>
+                    </button>
+                </div>
+
+                <div class="service_box">
+                    <div class="service_img">
+                        <img src="./img/forParents.png" alt="parent">
+                    </div>
+                    <h1>Родителям</h1>
+                    <p>
+                        Портал приема в 1 класс для перевода детей с ОВЗ из школы в школу
+                    </p>
+                    <button type="button">
+                       <a href="#">Читать дале</a>
+                    </button>
+                </div>
+
+                <div class="service_box">
+                    <div class="service_img">
+                        <img src="./img/forTeachers.png" alt="teacher">
+                    </div>
+                    <h1>Учителям</h1>
+                    <p>
+                        Портал приема в 1 класс для перевода детей с ОВЗ из школы в школу
+                    </p>
+                    <button type="button">
+                       <a href="#">Читать дале</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container reveal">
+            <div class="school">
+                <div class="schoolContent">
+                    <h1>Если вы не можете ходить в школу, школа может пойти к вам домой.</h1>
+                    <p>Maktab.uz — передовая цифровая образовательная технология, соответствующая международным стандартам и обеспечивающая качественное непрерывное дистанционное обучение школьников. Платформа предназначена как для учителей, так и для родителей
+                        учеников предоставляет широкие возможности следить за уровнем развития и знакомиться с содержанием тем.
+                    </p>
+                    <a href="#" target="_blank" class="moreBtn">Читать далее</a>
+                </div>
+                <div class="school_img">
+                    <img src="./img/laptop.png" alt="laptop">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="boxes">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="./img/univer.jpg" alt="univer">
+                            </div>
+                            <div class="box_text">
+                                <div>
+                                    <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
+                                </div>
+                                <div class="box_icons">
+                                    <p>04 Октябрь</p>
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="feedBack">
+            <h1 class="feedTitle">
+                Fikrlar
+            </h1>
+
+            <div class="feedbackArea">
+                <img src='./img/"".png' class="feedbackcomma" alt="''">
+
+                <div class="feedSlider">
+                    <div class="swiper feedBackSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p>«Качественное образование является мощным двигателем развития и одним из самых мощных инструментов сокращения бедности и укрепления здоровья, гендерного равенства, мира и стабильности. Детские знания Если им это удастся,
+                                        они станут взрослыми, которые изменят свою жизнь и свою страну».</p>
+                                    <h1>
+                                        Mirafzal Mirvosiqov
+                                    </h1>
+                                    <p>
+                                        посол США в Узбекистане
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p>«Качественное образование является мощным двигателем развития и одним из самых мощных инструментов сокращения бедности и укрепления здоровья, гендерного равенства, мира и стабильности. Детские знания Если им это удастся,
+                                        они станут взрослыми, которые изменят свою жизнь и свою страну».</p>
+                                    <h1>
+                                        Mirafzal Mirvosiqov
+                                    </h1>
+                                    <p>
+                                        посол США в Узбекистане
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p>«Качественное образование является мощным двигателем развития и одним из самых мощных инструментов сокращения бедности и укрепления здоровья, гендерного равенства, мира и стабильности. Детские знания Если им это удастся,
+                                        они станут взрослыми, которые изменят свою жизнь и свою страну».</p>
+                                    <h1>
+                                        Mirafzal Mirvosiqov
+                                    </h1>
+                                    <p>
+                                        посол США в Узбекистане
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p>«Качественное образование является мощным двигателем развития и одним из самых мощных инструментов сокращения бедности и укрепления здоровья, гендерного равенства, мира и стабильности. Детские знания Если им это удастся,
+                                        они станут взрослыми, которые изменят свою жизнь и свою страну».</p>
+                                    <h1>
+                                        Mirafzal Mirvosiqov
+                                    </h1>
+                                    <p>
+                                        посол США в Узбекистане
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="feedbackArea additionalProperty">
+                <h1 class="feedTitle">Связаться с нами</h1>
+
+                <form id="form" class="customFrom">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-control">
+                                <input type="text" placeholder="F.I.Sh" id="username" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-control">
+                                <input type="email" placeholder="E.pochta" id="email" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-control">
+                                <input type="tel" placeholder="Telefon" id="tel" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-control">
+                                <input type="text" placeholder="Mavzu" id="theme" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-control">
+                                <textarea id="formTextArea" class="formTextArea" placeholder="Xabarlar"></textarea>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="formBtn">Отправить</button>
+                </form>
+
+
+            </div>
+
+            <div class="container">
+                <div class="footerBox">
+                    <a href="#">
+                        <img alt="icon" src="./img/mainBox3.png">
+                        <h1>Обращения</h1>
+                        <span>Вы можете обратиться в Министерство народного просвещения с заявлением, предложением или жалобой</span>
+                    </a>
+
+                    <a href="#">
+                        <img alt="icon" src="./img/mainbox2.png">
+                        <h1>Отправить идею</h1>
+                        <span>Вы можете обратиться в Министерство народного просвещения с заявлением, предложением или жалобой</span>
+                    </a>
+
+                    <a href="#">
+                        <img alt="icon" src="./img/mainBox1.png">
+                        <h1>График приема</h1>
+                        <span>Вы можете обратиться в Министерство народного просвещения с заявлением, предложением или жалобой</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <h1 class="feedTitle">Полезные ссылки</h1>
+                <div>
+                    <div class="swiper footerlinks ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz ">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a class="sliderBox " target="_blank " href="# ">
+                                    <div class="imageBox ">
+                                        <img alt="image " src="./img/gov.uz">
+                                    </div>
+                                    Конституция Республики Узбекистан
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="container fContent">
+            <div class="mainBlock">
+                <img alt="Logo" class="footerLogoImg" src="./img/logoVertical.png">
+
+                <h1>Министерство народного образования Республики Узбекистан</h1>
+
+                <h2>100187, Узбекистан, г.Ташкент, Шайхантахурский район, улица Навои, 2а100187, O'zbekiston, Toshkent, Shayxontoxur tumani, Navoiy ko'chasi, 2a</h2>
+
+                <div class="footerContactsBox">
+                    <a href="#">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(71) 241-01-86</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@xtv.uz</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>@uzedu</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>@uzedu</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>/uzedu.uz</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        <span>/uzedu</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="simpleBlock">
+                <ul class="dashed">
+                    <li><a href="#">Cookie siyosati</a></li>
+                    <li><a href="#">Политика безопасности</a></li>
+                    <li><a href="#">Условия эксплуатации</a></li>
+                    <li><a href="#">Руководство пользователя веб-сайта</a></li>
+                </ul>
+            </div>
+
+            <div class="simpleBlock simpleBlockUl">
+                <ul>
+                    <li><a href="#"><i class="fas fa-comment-alt"></i>Обращения граждан</a></li>
+                    <li><a href="#"><i class="fas fa-database"></i>Открытые данные</a></li>
+                    <li><a href="#"><i class="fas fa-sitemap"></i>Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+
+    <script src="./js/swiper.js "></script>
+    <script src="./js/bootstrap.bundle.js "></script>
+    <script src="./js/language.js "></script>
+    <script src="./js/burger.js "></script>
+    <script src="./js/reveal.js "></script>
+    <script src="./js/forUrl.js "></script>
+    <script src="./js/form.js "></script>
+    <script src="./js/searchBox.js"></script>
+</body>
+
+</html>
